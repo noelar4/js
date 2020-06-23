@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Button</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            function changeText(num) {
+                if(num == 1) {
+                    document.getElementById('pText').innerHTML = "You pressed button 1";
+                }
+                if(num == 2) {
+                    document.getElementById('pText').innerHTML = "You pressed Button 2";
+                }
+                if(num == 3) {
+                    document.getElementById('pText').innerHTML = "You pressed Button 3";
+                }
+            }
+        </script>
+
+        <input type="button" value="Button 1" id="b1" onclick="changeText(1);"/>
+        <input type="button" value="Button 2" id="b2" onclick="changeText(2);"/>
+        <input type="button" value="Button 3" id="b3" onclick="changeText(3);"/>
+
+        <p id="pText">Click on a Button</p>
+    </body>
+</html>
